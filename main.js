@@ -5,8 +5,10 @@ const {
     screen,
     ipcMain
 } = require('electron')
+
 const path = require('path')
 const Customer = require("./models/Customer");
+
 require("./database");
 
 function createWindow() {
@@ -71,6 +73,63 @@ ipcMain.on('getUser', (event, request) => {
 })
 
 
+
+
+ipcMain.on('createAccount',async (event, request) => {
+   
+
+   
+    request['cust_id'] = 1;
+    const customer = new Customer(request);
+    const customersaved = await customer.save();
+    event.reply('createAccountReply',JSON.stringify(customersaved));
+    console.log(request);
+
+    event.sender.send('getUserReply', JSON.stringify(names[request]));
+})
+
+
+ipcMain.on("updateTransaction", async (e, args) => {
+    console.log(args);
+
+    const record  = await Customer.findOne({ 'name': 'noumn' }).exec();
+    const id  = record._id;
+
+    const newtransaction = {
+        
+            trans_id:1,
+            entity:1,
+            details:'string',
+            weigth:1,
+            rate:1,
+            type:'string',
+            person:'string',
+            deal:1,
+            total:1,
+            kaat:1,
+            kaat_cost:1,
+            nets:1,
+            net_balance:1
+            
+    }
+
+
+    const updatedTask = await Customer.findOneAndUpdate(
+        {_id: id},
+        { $push: { 'transactions': newtransaction  } },
+        function (error, success) {
+            if (error) {
+                console.log(error);
+            } else {
+                console.log(success);
+            }
+        });
+    
+    e.reply("update-task-success", JSON.stringify(updatedTask));
+  });
+
+
+
 // crud Queery example
 
 // ipcMain.on("new-task", async (e, arg) => {
@@ -89,12 +148,3 @@ ipcMain.on('getUser', (event, request) => {
 //     e.reply("delete-task-success", JSON.stringify(taskDeleted));
 //   });
   
-//   ipcMain.on("update-task", async (e, args) => {
-//     console.log(args);
-//     const updatedTask = await Task.findByIdAndUpdate(
-//       args.idTaskToUpdate,
-//       { name: args.name, description: args.description },
-//       { new: true }
-//     );
-//     e.reply("update-task-success", JSON.stringify(updatedTask));
-//   });
