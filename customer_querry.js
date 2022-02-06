@@ -16,31 +16,27 @@
 // transactions:
 
 
-const form = document.querySelector("#createAccountForm");
+// const form = document.querySelector("#createAccountForm");
 
 
-form.addEventListener("submit", async (e) => {
-    e.preventDefault();
+// form.addEventListener("submit", async (e) => {
+//     e.preventDefault();
 
-    // console.log(form.name.value)
-    let bal = 0;
-    if (form.balance.value == '') form.balance.value = 0;
-    if (form.opening_bal.value == '') form.opening_bal.value = 0;
+//     // console.log(form.name.value)
+//     let bal = 0;
+//     if (form.balance.value == '') form.balance.value = 0;
+//     if (form.opening_bal.value == '') form.opening_bal.value = 0;
 
-    bal = form.balance.value - form.opening_bal.value;
+//     bal = form.balance.value - form.opening_bal.value;
 
-    const task = {
-        'name': form.name.value,
-        'details': form.details.value + " " + "Contact No: " + form.contact_number.value,
-        'balance': bal,
-    };
+//     const task = {
+//         'name': form.name.value,
+//         'details': form.details.value + " " + "Contact No: " + form.contact_number.value,
+//         'balance': bal,
+//     };
 
-
-
-
-
-    ipcRenderer.send("createAccount", task);
+//     ipcRenderer.send("createAccount", task);
 
 
-    form.reset();
-});
+//     form.reset();
+// });

@@ -9,12 +9,10 @@
     <title>
         Now UI Dashboard by Creative Tim
     </title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
-        name='viewport' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- CSS Files -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
@@ -46,27 +44,22 @@
                 // EA.style.display = "none";
                 // AH.style.display = "none";
 
-            }
-
-            else if (_id == 'create_account') {
+            } else if (_id == 'create_account') {
                 document.getElementById("dashboard").style.display = "none";
                 document.getElementById("create_account").style.display = "block";
                 document.getElementById("edit_account").style.display = "none";
                 document.getElementById("account_history").style.display = "none";
-            }
-            else if (_id == 'edit_account') {
+            } else if (_id == 'edit_account') {
                 document.getElementById("dashboard").style.display = "none";
                 document.getElementById("create_account").style.display = "none";
                 document.getElementById("edit_account").style.display = "block";
                 document.getElementById("account_history").style.display = "none";
-            }
-            else if (_id == 'account_history') {
+            } else if (_id == 'account_history') {
                 document.getElementById("dashboard").style.display = "none";
                 document.getElementById("create_account").style.display = "none";
                 document.getElementById("edit_account").style.display = "none";
                 document.getElementById("account_history").style.display = "block";
-            }
-            else {
+            } else {
                 document.getElementById("dashboard").style.display = "block";
                 document.getElementById("create_account").style.display = "block";
                 document.getElementById("edit_account").style.display = "block";
@@ -160,8 +153,7 @@
                         </div>
                         <a class="navbar-brand" href="#pablo">Icons</a>
                     </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-                        aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
                         <span class="navbar-toggler-bar navbar-kebab"></span>
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -187,8 +179,7 @@
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="now-ui-icons location_world"></i>
                                     <p>
                                         <span class="d-lg-none d-md-block">Some Actions</span>
@@ -259,117 +250,14 @@
                 </div>
             </div>
 
-            <!-- create Account  -->
+            <!-- add Transaction  -->
 
-            <div id="create_account" class="content">
+            <div id="add_transaction" class="content">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5 class="title">Create Account</h5>
-                            </div>
-                            <div class="card-body">
-                                <form id="createAccountForm">
-                                    <!-- name -->
-                                    <div class="row">
-                                        <!-- <div class="col-md-5 pr-1">
-                      <div class="form-group">
-                        <label>Company (disabled)</label>
-                        <input type="text" class="form-control" disabled="" placeholder="Company"
-                          value="Creative Code Inc.">
-                      </div>
-                    </div> -->
-                                        <div class="col-md-3 pr-1">
-                                            <div class="form-group">
-                                                <label>Name</label>
-                                                <input type="text" id="name" class="form-control"
-                                                    placeholder=" Full name">
-                                            </div>
-                                        </div>
-                                        <!-- <div class="col-md-4 pl-1">
-                      <div class="form-group">
-                        <label >Address</label>
-                        <input type="email" class="form-control" placeholder="village name etc">
-                      </div>
-                    </div> -->
-                                    </div>
-                                    <!-- <div class="row">
-                    <div class="col-md-6 pr-1">
-                      <div class="form-group">
-                        <label>First Name</label>
-                        <input type="text" class="form-control" placeholder="Company" value="Mike">
-                      </div>
-                    </div>
-                    <div class="col-md-6 pl-1">
-                      <div class="form-group">
-                        <label>Last Name</label>
-                        <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
-                      </div>
-                    </div>
-                  </div> -->
-
-                                    <!-- detais -->
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Details</label>
-                                                <input type="text" id="details" class="form-control"
-                                                    placeholder="Zaat Address etc" required>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="row">
-                                        <div class="col-md-4 pr-1">
-                                            <div class="form-group">
-                                                <label>Opening balance(udhar)</label>
-                                                <input type="text" id="opening_bal" class="form-control"
-                                                    placeholder="jo pese lene hain">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 px-1">
-                                            <div class="form-group">
-                                                <label>Balance</label>
-                                                <input type="text" id="balance" class="form-control"
-                                                    placeholder="jo dene hain">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 pl-1">
-                                            <div class="form-group">
-                                                <label>Contact Number</label>
-                                                <input type="number" id="contact_number" class="form-control"
-                                                    placeholder="0300-00000000,   0300-0000000">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="submit" class="btn btn-info btn-lg "
-                                                    value="Create Account">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- Edit Entry Account  -->
-
-            <!-- Edit Entry Account  -->
-
-            <div id="edit_account" class="content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="title">Edit account</h5>
+                                <h5 class="title">Enter New Transaction</h5>
                             </div>
                             <div class="card-body">
                                 <form>
@@ -385,34 +273,33 @@
                                         <div class="col-md-3 pr-1">
                                             <div class="form-group">
                                                 <label>Details</label>
-                                                <input type="text" class="form-control"
-                                                    placeholder="About this transation">
+                                                <input type="text" class="form-control" placeholder="About this transation">
                                             </div>
                                         </div>
                                         <div class="col-3 ">
 
-                                            <!-- <div class="form-group">
-                        <label>Select Type</label>
-                        <select class="form-control" onclick="selector(this)" id="selectType">
-                          <option>Select Option </option>
-                          <option>Wheat</option>
-                          <option>Till</option>
-                          <option>Channa</option>
-                          <option>Mattar</option>
-                          <option>Urea</option>
-                          <option>Sarso</option>
-                          <option>DAP</option>
-                          <option>Pesticide</option>
-                          <option>Beaj</option>
-                          <option>Diesel</option>
-                          <option>Machine</option>
-                          <option>Money (Cash)</option>
-                          <option>Check</option>
-                          <option>Labour</option>
-                          <option>Other</option>
+                                            <div class="form-group">
+                                                <label>Select Type</label>
+                                                <select class="form-control" onclick="selector(this)" id="selectType">
+                                                    <option>Select Option </option>
+                                                    <option>Wheat</option>
+                                                    <option>Till</option>
+                                                    <option>Channa</option>
+                                                    <option>Mattar</option>
+                                                    <option>Urea</option>
+                                                    <option>Sarso</option>
+                                                    <option>DAP</option>
+                                                    <option>Pesticide</option>
+                                                    <option>Beaj</option>
+                                                    <option>Diesel</option>
+                                                    <option>Machine</option>
+                                                    <option>Money (Cash)</option>
+                                                    <option>Check</option>
+                                                    <option>Labour</option>
+                                                    <option>Other</option>
 
-                        </select>
-                      </div> -->
+                                                </select>
+                                            </div>
                                         </div>
 
 
@@ -443,15 +330,13 @@
                                                 <div class="col-md-3 pl-1">
                                                     <div class="form-group">
                                                         <label>Kaat</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="kaat per Mann">
+                                                        <input type="text" class="form-control" placeholder="kaat per 100 kilo">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3 pl-1">
                                                     <div class="form-group">
                                                         <label>Bardana</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="number of boris">
+                                                        <input type="text" class="form-control" placeholder="bardana wapsi">
                                                     </div>
                                                 </div>
 
@@ -466,8 +351,7 @@
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Rate</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="cost per Unit">
+                                                        <input type="text" class="form-control" placeholder="cost per Unit">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
@@ -487,15 +371,13 @@
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Rate</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="cost per Unit">
+                                                        <input type="text" class="form-control" placeholder="cost per Unit">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Type</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="cost per Unit">
+                                                        <input type="text" class="form-control" placeholder="cost per Unit">
                                                     </div>
                                                 </div>
                                             </div>
@@ -509,22 +391,18 @@
 
                                                     <div class="form-group">
                                                         <label>Check</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Check Amount">
+                                                        <input type="text" class="form-control" placeholder="Check Amount">
                                                         <!-- <label>Bank</label> -->
-                                                        <input type="text" class="form-control"
-                                                            placeholder="name of bank">
+                                                        <input type="text" class="form-control" placeholder="name of bank">
                                                         <!-- <label>Check Number</label> -->
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Check number">
+                                                        <input type="text" class="form-control" placeholder="Check number">
                                                     </div>
 
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Name</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="sender / reciver Name">
+                                                        <input type="text" class="form-control" placeholder="sender / reciver Name">
                                                     </div>
                                                 </div>
 
@@ -548,34 +426,13 @@
 
 
                                             <div class="row hide" id="type5">
+
                                                 <div class="col-md-3 pr-1">
                                                     <div class="form-group">
-                                                        <label>Labour</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Tractor hours">
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Therasher Hours">
-                                                        <input type="number" class="form-control"
-                                                            placeholder="Cultivator Hours">
+                                                        <label>Amount</label>
+                                                        <input type="text" class="form-control" placeholder="Amount money">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 pr-1">
-                                                    <div class="form-group">
-                                                        <label>Rate</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="cost per hour">
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="col-md-4 px-1">
-                          <div class="form-group">
-                            <label>Country</label>
-                          </div>
-                        </div>
-                        <div class="col-md-4 pl-1">
-                          <div class="form-group">
-                            <label>Postal Code</label>
-                          </div>
-                        </div> -->
                                             </div>
 
                                             <div class="row hide" id="type6">
@@ -602,8 +459,7 @@
                                                 <div class="col-md-3 pl-1">
                                                     <div class="form-group">
                                                         <label>Kaat</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="kaat per Mann">
+                                                        <input type="text" class="form-control" placeholder="kaat per Mann">
                                                     </div>
                                                 </div>
 
@@ -623,15 +479,129 @@
                 </div>
             </div>
 
-            <!-- show transactions  -->
+            <!-- create Account  -->
 
-            <div id="account_history" class="content">
+            <div id="create_account" class="content">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5 class="card-category">Transactions History</h5>
-                                <h4 class="card-title">Client Name</h4>
+                                <h5 class="title">Create Account</h5>
+                            </div>
+                            <div class="card-body">
+                                <form id="createAccountForm">
+                                    <!-- name -->
+                                    <div class="row">
+                                        <!-- <div class="col-md-5 pr-1">
+          <div class="form-group">
+            <label>Company (disabled)</label>
+            <input type="text" class="form-control" disabled="" placeholder="Company"
+              value="Creative Code Inc.">
+          </div>
+        </div> -->
+                                        <div class="col-md-3 pr-1">
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input type="text" id="name" class="form-control" placeholder=" Full name">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-md-4 pl-1">
+          <div class="form-group">
+            <label >Address</label>
+            <input type="email" class="form-control" placeholder="village name etc">
+          </div>
+        </div> -->
+                                    </div>
+                                    <!-- <div class="row">
+        <div class="col-md-6 pr-1">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control" placeholder="Company" value="Mike">
+          </div>
+        </div>
+        <div class="col-md-6 pl-1">
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+          </div>
+        </div>
+      </div> -->
+
+                                    <!-- detais -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Details</label>
+                                                <input type="text" id="details" class="form-control" placeholder="Zaat Address etc" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-4 pr-1">
+                                            <div class="form-group">
+                                                <label>Opening balance(udhar)</label>
+                                                <input type="text" id="opening_bal" class="form-control" placeholder="jo pese lene hain">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 px-1">
+                                            <div class="form-group">
+                                                <label>Balance</label>
+                                                <input type="text" id="balance" class="form-control" placeholder="jo dene hain">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 pl-1">
+                                            <div class="form-group">
+                                                <label>Contact Number</label>
+                                                <input type="number" id="contact_number" class="form-control" placeholder="0300-00000000,   0300-0000000">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-info btn-lg " value="Create Account">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- show transactions  -->
+
+            <div id="account_transactions" class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="row m-0">
+
+                                    <div class="col p-0">
+
+                                        <div class="row m-0">
+
+                                            <h5 class="card-category">Transactions History</h5>
+                                        </div>
+
+                                        <div class="row m-0">
+                                            <div class="col-md-6 p-0">
+
+                                                <h4 class="UserName card-title">Client Name</h4>
+                                            </div>
+                                            <div class="col-md-6 p-0">
+                                                <input type="button" class="btn btn-info btn-lg float-right" onclick="showDashboard()" value="Back">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" class="btn btn-info btn-md " onclick="showAddTransaction()" value="New Transaction">
                             </div>
                             <div class="card-body">
                                 <div class="table table-responsive">
@@ -717,68 +687,56 @@
                                     <h6><span>Header 6</span>The Life of Now Ui Dashboard </h6>
                                 </div>
                                 <div class="typography-line">
-                                    <p><span>Paragraph</span> I will be the leader of a company that ends up being worth
-                                        billions of dollars, because I got the answers. I understand culture. I am the
-                                        nucleus. I think that’s a responsibility that I have,
-                                        to push possibilities, to show people, this is the level that things could be
-                                        at.
+                                    <p><span>Paragraph</span> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have,
+                                        to push possibilities, to show people, this is the level that things could be at.
                                     </p>
                                 </div>
                                 <div class="typography-line">
                                     <span>Quote</span>
                                     <blockquote>
                                         <p class="blockquote blockquote-primary">
-                                            "I will be the leader of a company that ends up being worth billions of
-                                            dollars, because I got the answers. I understand culture. I am the nucleus.
-                                            I think that’s a responsibility that I have, to push possibilities, to show
-                                            people, this is the level that
+                                            "I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that
                                             things could be at."
                                             <br>
                                             <br>
                                             <small>
-                                                - Noaa
-                                            </small>
+                                            - Noaa
+                                        </small>
                                         </p>
                                     </blockquote>
                                 </div>
                                 <div class="typography-line">
                                     <span>Muted Text</span>
                                     <p class="text-muted">
-                                        I will be the leader of a company that ends up being worth billions of dollars,
-                                        because I got the answers...
+                                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
                                     </p>
                                 </div>
                                 <div class="typography-line">
                                     <span>Primary Text</span>
                                     <p class="text-primary">
-                                        I will be the leader of a company that ends up being worth billions of dollars,
-                                        because I got the answers...
+                                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
                                     </p>
                                 </div>
                                 <div class="typography-line">
                                     <span>Info Text</span>
                                     <p class="text-info">
-                                        I will be the leader of a company that ends up being worth billions of dollars,
-                                        because I got the answers... </p>
+                                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
                                 </div>
                                 <div class="typography-line">
                                     <span>Success Text</span>
                                     <p class="text-success">
-                                        I will be the leader of a company that ends up being worth billions of dollars,
-                                        because I got the answers... </p>
+                                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
                                 </div>
                                 <div class="typography-line">
                                     <span>Warning Text</span>
                                     <p class="text-warning">
-                                        I will be the leader of a company that ends up being worth billions of dollars,
-                                        because I got the answers...
+                                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
                                     </p>
                                 </div>
                                 <div class="typography-line">
                                     <span>Danger Text</span>
                                     <p class="text-danger">
-                                        I will be the leader of a company that ends up being worth billions of dollars,
-                                        because I got the answers... </p>
+                                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
                                 </div>
                                 <div class="typography-line">
                                     <h2><span>Small Tag</span> Header with small subtitle <br>
@@ -805,28 +763,28 @@
                                 </div>
                                 <div class="alert alert-info">
                                     <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
+                                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                                </button>
                                     <span>This is a notification with close button.</span>
                                 </div>
                                 <div class="alert alert-info alert-with-icon" data-notify="container">
                                     <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
+                                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                                </button>
                                     <span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>
                                     <span data-notify="message">This is a notification with close button and
-                                        icon.</span>
+                                    icon.</span>
                                 </div>
                                 <div class="alert alert-info alert-with-icon" data-notify="container">
                                     <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
+                                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                                </button>
                                     <span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>
                                     <span data-notify="message">This is a notification with close button and icon and
-                                        have many lines. You
-                                        can see that the icon and the close button are always vertically aligned. This
-                                        is a beautiful
-                                        notification. So you don't have to worry about the style.</span>
+                                    have many lines. You
+                                    can see that the icon and the close button are always vertically aligned. This
+                                    is a beautiful
+                                    notification. So you don't have to worry about the style.</span>
                                 </div>
                             </div>
                         </div>
@@ -839,37 +797,37 @@
                             <div class="card-body">
                                 <div class="alert alert-primary">
                                     <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
+                                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                                </button>
                                     <span><b> Primary - </b> This is a regular notification made with
-                                        ".alert-primary"</span>
+                                    ".alert-primary"</span>
                                 </div>
                                 <div class="alert alert-info">
                                     <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
+                                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                                </button>
                                     <span><b> Info - </b> This is a regular notification made with ".alert-info"</span>
                                 </div>
                                 <div class="alert alert-success">
                                     <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
+                                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                                </button>
                                     <span><b> Success - </b> This is a regular notification made with
-                                        ".alert-success"</span>
+                                    ".alert-success"</span>
                                 </div>
                                 <div class="alert alert-warning">
                                     <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
+                                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                                </button>
                                     <span><b> Warning - </b> This is a regular notification made with
-                                        ".alert-warning"</span>
+                                    ".alert-warning"</span>
                                 </div>
                                 <div class="alert alert-danger">
                                     <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
+                                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                                </button>
                                     <span><b> Danger - </b> This is a regular notification made with
-                                        ".alert-danger"</span>
+                                    ".alert-danger"</span>
                                 </div>
                             </div>
                         </div>
@@ -890,19 +848,16 @@
                                         <div class="col-lg-8 ml-auto mr-auto">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block"
-                                                        onclick="nowuiDashboard.showNotification('top','left')">Top
-                                                        Left</button>
+                                                    <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('top','left')">Top
+                                                    Left</button>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block"
-                                                        onclick="nowuiDashboard.showNotification('top','center')">Top
-                                                        Center</button>
+                                                    <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('top','center')">Top
+                                                    Center</button>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block"
-                                                        onclick="nowuiDashboard.showNotification('top','right')">Top
-                                                        Right</button>
+                                                    <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('top','right')">Top
+                                                    Right</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -911,19 +866,16 @@
                                         <div class="col-lg-8 ml-auto mr-auto">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block"
-                                                        onclick="nowuiDashboard.showNotification('bottom','left')">Bottom
-                                                        Left</button>
+                                                    <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('bottom','left')">Bottom
+                                                    Left</button>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block"
-                                                        onclick="nowuiDashboard.showNotification('bottom','center')">Bottom
-                                                        Center</button>
+                                                    <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('bottom','center')">Bottom
+                                                    Center</button>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block"
-                                                        onclick="nowuiDashboard.showNotification('bottom','right')">Bottom
-                                                        Right</button>
+                                                    <button class="btn btn-primary btn-block" onclick="nowuiDashboard.showNotification('bottom','right')">Bottom
+                                                    Right</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -941,18 +893,18 @@
                         <ul>
                             <li>
                                 <a href="https://www.creative-tim.com">
-                                    Creative Tim
-                                </a>
+                                Creative Tim
+                            </a>
                             </li>
                             <li>
                                 <a href="http://presentation.creative-tim.com">
-                                    About Us
-                                </a>
+                                About Us
+                            </a>
                             </li>
                             <li>
                                 <a href="http://blog.creative-tim.com">
-                                    Blog
-                                </a>
+                                Blog
+                            </a>
                             </li>
                         </ul>
                     </nav>
@@ -960,8 +912,8 @@
                         &copy;
                         <script>
                             document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-                        </script>, Designed by <a href="https://www.invisionapp.com" target="_blank">Invision</a>.
-                        Coded by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                        </script>, Designed by <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
+                        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
                     </div>
                 </div>
             </footer>
@@ -978,7 +930,7 @@
         }
     </script>
 
-    <script src="./assets/js/core/jquery.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="./assets/js/core/popper.min.js"></script>
     <script src="./assets/js/core/bootstrap.min.js"></script>
     <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
@@ -998,10 +950,12 @@
     <script type="text/javascript" src="./assets/DataTables/js/dataTables.jqueryui.min.js"></script>
 
     <!-- Insert this line after script imports -->
-    <script src="../routing.js"></script>
     <script src="../renderer.js"></script>
+    <script src="../routing.js"></script>
+
+
     <script>
-        $(function () {
+        $(function() {
             $('.hide').hide();
         })
 
@@ -1031,15 +985,14 @@
     </script>
 
 
-    <script>
-    </script>
+
     <!-- <script type="text/javascript" src="DataTables/datatables.min.js"></script> -->
 
-    <script src="../customer_querry.js">
+    <!-- <script src="../customer_querry.js"> -->
 
 
 
-    </script>
+
 </body>
 
 </html>
